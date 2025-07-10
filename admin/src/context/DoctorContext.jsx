@@ -8,7 +8,7 @@ export const DoctorContext =createContext()
 
 const DoctorContextProvider = (props) => {
 
-    const backendUrl = https://cureconnect-vvex.onrender.com
+    const backendUrl = `https://cureconnect-vvex.onrender.com`
 
     const [dToken,setDToken] = useState(localStorage.getItem('dToken') ? localStorage.getItem('dToken') : '')
 
