@@ -11,7 +11,7 @@ const ForgotPassword = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'}/api/user/forgot-password`,{ email });
+        `${import.meta.env.VITE_BACKEND_URL || 'https://cureconnect-vvex.onrender.com'}/api/user/forgot-password`,{ email });
       if (data.success) {
         toast.success('Password reset link sent to your email!');
       } else {

@@ -39,7 +39,7 @@ const Navbar = () => {
                 <li className='py-1 '>CONTACT</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-4/5 m-auto hidden'/>
             </NavLink>
-              <NavLink to='http://localhost:5174/'>
+              <NavLink to='https://cureconnect-1.onrender.com'>
              <button className='py-0.5 px-2 text-sm bg-blue-300 text-white rounded hover:bg-blue-700 transition-all duration-200 shadow-sm'>
   admin panel
 </button>
