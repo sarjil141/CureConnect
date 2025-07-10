@@ -14,7 +14,7 @@ const ResetPassword = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        `${https://cureconnect-vvex.onrender.com || 'https://cureconnect-vvex.onrender.com'}/api/user/reset-password/${token}`,
+        `${`https://cureconnect-vvex.onrender.com`}/api/user/reset-password/${token}`,
         { password }
       );
       if (data.success) {
