@@ -159,7 +159,11 @@ const forgotPassword = async (req, res) => {
 		await user.save();
 
 		// send email
-		await sendPasswordResetEmail(user.email, `${https://cureconnect-frontend-235r.onrender.com/}/reset-password/${resetToken}`);
+		await sendPasswordResetEmail(
+  user.email,
+  `https://cureconnect-frontend-235r.onrender.com/reset-password/${resetToken}`
+);
+
 
 		res.status(200).json({ success: true, message: "Password reset link sent to your email" });
 	} catch (error) {
